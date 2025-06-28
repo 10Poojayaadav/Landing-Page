@@ -11,7 +11,7 @@ const Sidebar = () => {
     <>
       {/* Mobile Toggle Button */}
       <button
-        className="md:hidden fixed top-4 left-4 z-50 bg-gray-800 p-2 rounded"
+        className="md:hidden fixed top-6 z-50 p-2 rounded"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FiX className="text-white text-2xl" /> : <FiMenu className="text-white text-2xl" />}
