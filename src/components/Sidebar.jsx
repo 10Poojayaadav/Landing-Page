@@ -14,7 +14,11 @@ const Sidebar = () => {
         className="md:hidden fixed top-6 z-50 p-2 rounded"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <FiX className="text-white text-2xl" /> : <FiMenu className="text-white text-2xl" />}
+        {isOpen ? (
+          <FiX className="text-white text-2xl" />
+        ) : (
+          <FiMenu className="text-white text-2xl" />
+        )}
       </button>
 
       {/* Sidebar */}
@@ -36,24 +40,20 @@ const Sidebar = () => {
           {/* Menu */}
           <ul className="space-y-6">
             <li>
-              <button className="bg-gradient-to-r from-green-500 to-pink-500 text-white px-4 py-2 rounded-full w-full text-center">
+              <button className="bg-gradient-to-r  from-green-500 to-pink-500 text-white px-4 py-2 rounded-full w-full text-center">
                 CONTACT US
               </button>
             </li>
-            <li>App Development</li>
-            <li>Challenges</li>
-            <li>Hire Developer</li>
-            <li>Community</li>
+             <li className="cursor-pointer hover:drop-shadow-[0_0_5px_white]">App Development</li>
+  <li className="cursor-pointer hover:drop-shadow-[0_0_5px_white]">Challenges</li>
+  <li className="cursor-pointer hover:drop-shadow-[0_0_5px_white]">Hire Developer</li>
+  <li className="cursor-pointer hover:drop-shadow-[0_0_5px_white]">Community</li>
           </ul>
         </div>
 
         {/* Image and text */}
         <div className="mt-10">
-          <img
-            src={ServiceImage}
-            alt="sidebar"
-            className="rounded-lg mb-2"
-          />
+          <img src={ServiceImage} alt="sidebar" className="rounded-lg mb-2" />
           <p className="text-xs text-gray-300">
             Lorem ipsum dolor sit amet consectetur. Enim tempor posuere rutrum.
           </p>
