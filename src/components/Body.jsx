@@ -41,7 +41,7 @@ const Body = () => {
           <img
             src={Main}
             alt="Flutter Showcase"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl rounded shadow-lg object-cover"
+            className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl object-cover"
           />
         </div>
       </section>
